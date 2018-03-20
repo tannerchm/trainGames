@@ -1,0 +1,12 @@
+body {
+background-image: url("../assets/images/concrete.png");
+}
+h1 {
+    font-family: 'IBM Plex Serif', serif; 
+}
+h3 {
+    font-family: 'Pacifico', cursive;
+}
+table {
+    font-family: 'Cutive Mono', monospace;
+}
