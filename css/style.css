@@ -1,11 +1,23 @@
 body {
 background-image: url("../assets/images/concrete.png");
+color: white;
+}
+.jumbotron-fluid {
+    background-image: url("../assets/images/forest.jpg");
+   
+}
+.navbar-brand {
+    color: white;
+    font-family: 'Chela One', cursive;
 }
 h1 {
     font-family: 'IBM Plex Serif', serif; 
 }
 h3 {
     font-family: 'Pacifico', cursive;
+}
+h4 {
+    color: black;
 }
 table {
     font-family: 'Cutive Mono', monospace;

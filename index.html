@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,70 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- BootStrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|IBM+Plex+Serif|Pacifico" rel="stylesheet">
-   
+    <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
+
 </head>
+
 <body>
 
-<!-- Train Time -->
-<div class="container">
-
+<!-- Just an image Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">TrainGames</span>
+      </nav>
+  
         <!-- Jumbotron -->
-        <div class="jumbotron-fluid" style="background-color: rgb(219, 82, 82); color: white">
+        <div class="jumbotron-fluid">
+                <div class="container">
             <h1 class="text-center">Don't miss your train</h1>
-            <h3 class="text-center">Find the next arrival time in the list below</h3>
-        </div>
+            <h3 class="text-center">Add your own train then scroll down to see what other trains you might want to take</h3>
         
+
         <div class="row">
             <div class="col-lg-12">
-        
-            <!-- Train Div -->
+
+                <!-- Entry Form -->
+                <form>
+                    <div class="form-group">
+                        <label for="">Train Name</label>
+                        <input type="text" class="form-control" id="trainNameInput">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Destination</label>
+                        <input type="text" class="form-control" id="destinationInput">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="firstTrainInput">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequencyInput">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
+                </form>
+            </div>
+            </div>
+            </div> 
+            </div>
+
+
+
+            <!-- Train Time -->
+            <div class="container">
+
+
+
+                <!-- Train Div -->
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h4 class="panel-title">Current Train Schedule</h4>
@@ -46,48 +89,23 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+
                             </tbody>
                         </table>
                     </div>
                 </div>
-    
+
                 <!-- Add Train  -->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><strong>Add Train</strong></h4>
+                        <h4 class="panel-title">
+                            <!-- <strong>Add Train</strong> -->
+                        </h4>
                     </div>
                     <div class="panel-body">
-        
-    
-                    <!-- Entry Form -->
-                    <form>
-                        <div class="form-group">
-                            <label for="">Train Name</label>
-                            <input type="text" class="form-control" id="trainNameInput">
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="">Destination</label>
-                            <input type="text" class="form-control" id="destinationInput">
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="">First Train Time (HH:mm - military time)</label>
-                            <input type="text" class="form-control" id="firstTrainInput">
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="">Frequency (min)</label>
-                            <input type="text" class="form-control" id="frequencyInput">
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
-                    </form>
-    
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </div>
@@ -102,11 +120,12 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <!-- My Firebase -->
-     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- My Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <!-- My JavaScript -->
     <script src="javascript/script.js"></script>
     <!-- Moment js -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </body>
+
 </html>
